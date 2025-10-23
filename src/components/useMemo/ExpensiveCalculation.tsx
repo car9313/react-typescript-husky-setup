@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState } from 'react';
 
 /* useMemo memoriza el resultado de una función costosa o repetitiva.
 Solo recalcula el valor cuando cambian las dependencias (en este caso, count).
@@ -10,7 +10,7 @@ Si presionas Cambiar other, el componente se renderiza, pero el cálculo no se r
 */
 
 function heavyCalculation(num: number) {
-  console.log("Ejecutando cálculo pesado...");
+  console.log('Ejecutando cálculo pesado...');
   // Simulación de un cálculo muy costoso
   let total = 0;
   for (let i = 0; i < 1e8; i++) {
@@ -23,7 +23,7 @@ export default function ExpensiveCalculation() {
   const [count, setCount] = useState(0);
   const [other, setOther] = useState(0);
   const result = useMemo(() => {
-    console.log("Calculando");
+    console.log('Calculando');
     return heavyCalculation(count);
   }, [count]);
 

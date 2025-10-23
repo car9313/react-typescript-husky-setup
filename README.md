@@ -1,49 +1,33 @@
-## ⚙️ Configuraciones Incluidas
+# React TypeScript Husky Setup
 
-### ESLint
+Este proyecto es una configuración completa de React con TypeScript, que incluye ESLint, Prettier, Husky y lint-staged.
 
-- Configuración para React + TypeScript
-- Integración con Prettier
-- Reglas modernas y estrictas
+## Características
 
-### Prettier
+- ⚛️ React 18
+- 🔷 TypeScript
+- 🚀 Vite
+- 📏 ESLint con configuración estricta
+- 💖 Prettier con integración con ESLint
+- 🐶 Husky para git hooks
+- 🔍 lint-staged para ejecutar linters en archivos staged
 
-- Formato consistente
-- Integrado con ESLint
-- Configuración para Windows/Linux/Mac
+## Scripts
 
-### Husky
+- `npm run dev` - Inicia el servidor de desarrollo
+- `npm run build` - Construye la aplicación para producción
+- `npm run lint` - Ejecuta ESLint
+- `npm run lint:fix` - Ejecuta ESLint y arregla los problemas automáticamente
+- `npm run format` - Formatea el código con Prettier
+- `npm run type-check` - Verifica los tipos de TypeScript
 
-- **pre-commit**: Ejecuta lint-staged y type-check
-- **pre-push**: Ejecuta lint completo y type-check
+## Configuración de Git Hooks
 
-### TypeScript
+- `pre-commit`: Ejecuta lint-staged (ESLint y Prettier) y verificación de tipos.
+- `pre-push`: Ejecuta lint y verificación de tipos en todo el proyecto.
 
-- Configuración estricta
-- Path mapping
-- JSX react-jsx
+## Uso
 
-## 🚀 Scripts Disponibles
-
-```bash
-# Desarrollo
-npm run dev
-
-# Build
-npm run build
-
-# Linting
-npm run lint
-npm run lint:fix
-
-# Formateo
-npm run format
-npm run format:check
-
-# Verificación de tipos
-npm run type-check
-
-# Todo en uno (lint + format)
-npm run lint:format
-
-```
+1. Clona el repositorio.
+2. Ejecuta `npm install` para instalar las dependencias.
+3. Ejecuta `npm run dev` para iniciar el servidor de desarrollo.
