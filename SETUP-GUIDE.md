@@ -307,29 +307,10 @@ Solución:
 En .prettierrc, cambiar "endOfLine": "lf" por "endOfLine": "auto"
 
 Crear archivo .gitattributes:
-
-# Establece el comportamiento para todos los archivos
 * text=auto
-
-# Fuerza LF para estos tipos de archivos
 *.js text eol=lf
-*.jsx text eol=lf
 *.ts text eol=lf
-*.tsx text eol=lf
 *.json text eol=lf
-*.css text eol=lf
-*.md text eol=lf
-*.html text eol=lf
-*.yml text eol=lf
-*.yaml text eol=lf
-
-# Archivos binarios que no deben ser modificados
-*.png binary
-*.jpg binary
-*.jpeg binary
-*.gif binary
-*.ico binary
-*.svg binary
-*.ttf binary
+.husky/* text eol=lf
 
 ```

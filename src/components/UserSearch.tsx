@@ -1,6 +1,4 @@
-import { useCallback, useMemo, useState } from 'react';
-
-type User = {
+/* type User = {
   id: number;
   name: string;
   email: string;
@@ -9,11 +7,11 @@ const users: User[] = Array.from({ length: 50 }, (_, i) => ({
   id: i + 1,
   name: `Usuario ${i + 1}`,
   email: `usuario ${i + 1}@example.com`,
-}));
+})); */
 
 export default function UserSearch() {
-  const [query, setQuery] = useState('');
-  const [sortAsc, setSortAsc] = useState(true);
+  /* const [query, setQuery] = useState('');
+   const [sortAsc, setSortAsc] = useState(true);
   const [page, setPage] = useState(1);
   const pageSize = 10;
 
@@ -45,7 +43,7 @@ export default function UserSearch() {
   const nextPage = useCallback(
     () => setPage(p => Math.min(p + 1, Math.ceil(sortedUsers.length / pageSize))),
     [sortedUsers.length],
-  );
+  ); */
   return (
     <div className='p-6 max-w-2xl mx-auto'>
       <h1 className='text-2xl font-bold mb-4'>Gestión de Usuarios</h1>
